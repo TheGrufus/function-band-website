@@ -168,7 +168,7 @@ main {
     background-color: #702d7296;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 300px;
     padding: 20px;
     text-align: center;
     border: 2px solid gray;
@@ -194,19 +194,20 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .controls button {
     background: none;
     border: none;
-    font-size: 24px;
-    margin: 0 10px;
+    font-size: 22px;
+    margin: 0 8px;
     cursor: pointer;
 }
 
 .controls input[type="range"] {
     margin-left: 10px;
-    width: 100px;
+    width: 75px;
 }
 
 .progress-container {
