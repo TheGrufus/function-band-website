@@ -1,0 +1,234 @@
+
+* {
+  margin : 0;
+  border: 0px solid black;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+:root {
+  --nav-background-dark: rgb(22, 22, 22);
+  --nav-background-lighter: rgb(48, 47, 53);
+  --nav-btn-text: rgb(228, 228, 228);
+  --nav-border-bottom: rgb(22, 22, 22);
+
+  --main-text: whitesmoke;
+
+  --info-container: #202020d8;
+}
+
+body {
+  background-color: #292929;
+  color: var(--main-text);
+}
+
+#background-container {
+  display: flex;
+  justify-content: center;
+}
+
+#background-lights-pic { 
+  position: fixed;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+/* HEADER LOGO ----------------------------------------- */
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+#band-name-logo {
+  position: fixed;
+  z-index: 2;
+  background-attachment: fixed;
+  height: 145px;
+}
+
+/* NAVBAR SECTION ----------------------------------------- */
+
+#navbar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-bottom: 2px solid var(--nav-border-bottom);
+  background: linear-gradient(var(--nav-background-dark), var(--nav-background-lighter));
+}  
+
+#nav-bar {
+  min-width: 400px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items:center;
+  height: 120px;
+}
+
+.nav-item {
+  display: flex;
+  margin: 0;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.nav-item-centre {
+  padding: 0px 20px;
+  width: 200px;
+  height: 100px;
+}
+
+.nav-button {
+  color: var(--nav-btn-text);
+}
+
+.nav-button:visited {
+  color: var(--nav-btn-text);
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  color: #858585;
+}
+
+/* MAIN SECTION ----------------------------------------- */
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--info-container);
+  padding: 100px 0 50px;
+}
+
+.paragraph-heading {
+  padding: 100px 0 100px ;
+}
+
+.general-paragraph {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.general-paragraph-top-line {
+  padding: 150px 15px 15px;
+  text-align: center;
+  font-size: 1.2em;
+  width: 80%;
+}
+
+#dates-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.referrer-name {
+  padding-bottom: 10px;
+}
+
+.referrer-name-top {
+  padding-top: 100px;
+}
+
+.referrer-quote {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #292929;
+  border-top: 2px solid rgb(22, 22, 22);
+}
+
+/* MEDIA QUERIES ----------------------------------------- */
+
+@media (max-width: 1000px) {
+  .nav-item {
+    display: flex;
+    margin: 0;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.2em;
+  } 
+
+  .general-paragraph-top-line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 100px;
+  }  
+
+  .band-member-pics {
+    border-radius: 10px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  #band-name-logo {
+    height: 100px;
+
+  }
+
+  .nav-item {
+    display: flex;
+    margin: 0;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  .nav-item-centre {
+    padding: 0px 20px;
+    width: 150px;
+    height: 100px;
+  }
+}
